@@ -1,0 +1,15 @@
+C:\Users\internet\source\repos\teaching_data_structures\bin\Debug\net8.0\data_structures.exe
+C:\Users\internet\source\repos\teaching_data_structures\bin\Debug\net8.0\data_structures.deps.json
+C:\Users\internet\source\repos\teaching_data_structures\bin\Debug\net8.0\data_structures.runtimeconfig.json
+C:\Users\internet\source\repos\teaching_data_structures\bin\Debug\net8.0\data_structures.dll
+C:\Users\internet\source\repos\teaching_data_structures\bin\Debug\net8.0\data_structures.pdb
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.AssemblyInfoInputs.cache
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.AssemblyInfo.cs
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.csproj.CoreCompileInputs.cache
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.sourcelink.json
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.dll
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\refint\data_structures.dll
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.pdb
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\data_structures.genruntimeconfig.cache
+C:\Users\internet\source\repos\teaching_data_structures\obj\Debug\net8.0\ref\data_structures.dll
