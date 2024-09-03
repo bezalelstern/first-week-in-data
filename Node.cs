@@ -13,11 +13,11 @@ namespace data_structures
 
         public Node Next;
 
-        public int getvalue() { return Value; }
-        public Node getnext() { return Next; } 
+        public int getValue() { return Value; }
+        public Node getNext() { return Next; } 
 
-        public void setvalue(int value) { Value = value; }
-        public void setnext(Node next) { Next = next; }
+        public void setValue(int value) { Value = value; }
+        public void setNext(Node next) { Next = next; }
 
 
         public Node(int data)

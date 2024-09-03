@@ -33,26 +33,26 @@ namespace data_structures
                 Node toAdd = new Node(data);
 
                 Node current = head;
-                while (current.getnext() != null)
+                while (current.getNext() != null)
                 {
-                    current = current.getnext();
+                    current = current.getNext();
                 }
 
-                current.setnext(toAdd);
+                current.setNext(toAdd);
             }
         }
 
-
+        //O(n)
         public void Display()
         {
             Node current = head;
             while (current != null)
             {
-                Console.WriteLine(current.getvalue());
-                current = current.getnext();
+                Console.WriteLine(current.getValue());
+                current = current.getNext();
             }
         }
-
+        //O(n)
         public int Length()
         {
             int counter = 0;
@@ -60,7 +60,7 @@ namespace data_structures
             while (current != null)
             {
                 counter++;
-                current = current.getnext();
+                current = current.getNext();
             }
             return counter;
         }
@@ -73,25 +73,25 @@ namespace data_structures
             Node prev = null;
             while (current != null)
             {
-                if (current.getvalue() == data)
+                if (current.getValue() == data)
                 {
 
                     if (prev == null)
                     {
-                        head = current.getnext();
+                        head = current.getNext();
                     }
 
                     else
                     {
-                        prev.setnext(current.getnext());
+                        prev.setNext(current.getNext());
                     }
-                    current = current.getnext();
+                    current = current.getNext();
                 }
                 else
                 {
 
                     prev = current;
-                    current = current.getnext();
+                    current = current.getNext();
                     break;
                 }
             }
@@ -106,26 +106,26 @@ namespace data_structures
             Node prev = null;
             while (current != null)
             {
-                if (current.getvalue() == data)
+                if (current.getValue() == data)
                 {
 
                     if (prev == null)
                     {
-                        head = current.getnext();
+                        head = current.getNext();
                     }
 
                     else
                     {
-                        prev.setnext(current.getnext());
+                        prev.setNext(current.getNext());
                     }
-                    current = current.getnext();
+                    current = current.getNext();
                 }
                 else
                 {
 
 
                     prev = current;
-                    current = current.getnext();
+                    current = current.getNext();
                 }
             }
         }
@@ -140,10 +140,10 @@ namespace data_structures
                 caounter++;
                 if (caounter == index)
                 {
-                    RemoveValue(current.getvalue());
+                    RemoveValue(current.getValue());
                     break;
                 }
-                current = current.getnext();
+                current = current.getNext();
             }
         }
 
@@ -153,9 +153,9 @@ namespace data_structures
             Node current = head;
             while (current != null)
             {
-                if(current.getvalue() == data)
+                if(current.getValue() == data)
                     return current;
-                current = current.getnext();
+                current = current.getNext();
             }
             return null;
         }
@@ -170,9 +170,9 @@ namespace data_structures
                 caounter++;
                 if (caounter == index)
                 {
-                    return current.getvalue();
+                    return current.getValue();
                 }
-                current = current.getnext();
+                current = current.getNext();
             }
             return 0;
         }

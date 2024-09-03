@@ -24,10 +24,12 @@ using data_structures;
 
 LinkedList linkedList =  new LinkedList();
 linkedList.Add(3);
-linkedList.Add(3);
+linkedList.Add(2);
 linkedList.Add(5);
 linkedList.Add(3);
 linkedList.Add(6);
 linkedList.RemoveValue(3);
+linkedList.RemoveAllValues(5);
+Console.WriteLine("langth: " + linkedList.Length());
 //linkedList.RemoveAllValues(3);
 linkedList.Display();
