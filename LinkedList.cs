@@ -123,6 +123,7 @@ namespace data_structures
                 else
                 {
 
+
                     prev = current;
                     current = current.getnext();
                 }
