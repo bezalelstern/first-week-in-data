@@ -43,14 +43,41 @@ namespace data_structures
         }
 
         //O(n)
-        public void Display()
+        public void Display1()
         {
+            string str = "";
             Node current = head;
             while (current != null)
             {
                 Console.WriteLine(current.getValue());
+                str += current.getValue();
                 current = current.getNext();
             }
+          
+        }
+
+
+        public string Display()
+        {
+            if (head == null)
+            {
+                return "";
+            }
+
+            Node current = head;
+            string result = "";
+
+            while (current != null)
+            {
+                result += current.getValue().ToString();
+                if (current.getNext() != null)
+                {
+                    result += " -> ";
+                }
+                current = current.Next;
+            }
+
+            return result;
         }
         //O(n)
         public int Length()
@@ -92,7 +119,7 @@ namespace data_structures
 
                     prev = current;
                     current = current.getNext();
-                    break;
+                    
                 }
             }
 
@@ -137,44 +164,51 @@ namespace data_structures
             Node current = head;
             while (current != null)
             {
-                caounter++;
+              
                 if (caounter == index)
                 {
                     RemoveValue(current.getValue());
+                    
                     break;
                 }
+                caounter++;
                 current = current.getNext();
             }
         }
 
         // Method to find by value
-        public Node Find(int data)
+        public int Find(int data)
         {
+            int Counter = 0;
             Node current = head;
             while (current != null)
             {
                 if(current.getValue() == data)
-                    return current;
+                    return Counter;
+                Counter++;
                 current = current.getNext();
             }
-            return null;
+            return -1;
         }
 
         // Method to get a value by  index
         public int Get(int index)
         {
+            if(head == null)
+                return -1;
             int caounter = 0;
             Node current = head;
             while (current != null)
             {
-                caounter++;
+              
                 if (caounter == index)
                 {
                     return current.getValue();
                 }
+                caounter++;
                 current = current.getNext();
             }
-            return 0;
+            return -1;
         }
     }
 }
