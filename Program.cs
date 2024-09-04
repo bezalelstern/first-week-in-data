@@ -322,5 +322,71 @@ class Program
 
         // Final Test Summary
         Console.WriteLine("\nFinal Test Summary: " + passedTests + " out of " + totalTests + " tests passed.");
+
+
+        queue q = new queue();
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        Console.WriteLine(q.Display() == "10 -> 20 -> 30" ? "Passed" : "Failed");
+        // בדיקת הפונקציה peek
+        Console.WriteLine(q.peek() == 10 ? "Passed" : "Failed");
+
+        // בדיקת הפונקציה dequeue
+        Console.WriteLine(q.dequeue().getValue() == 10 ? "Passed" : "Failed");
+        Console.WriteLine(q.Display() == "20 -> 30" ? "Passed" : "Failed");
+
+        // בדיקת פונקציית getcount
+        Console.WriteLine(q.getcount() == 2 ? "Passed" : "Failed");
+
+        // בדיקת dequeue על תור עם פריט אחד
+        Console.WriteLine(q.dequeue().getValue() == 20 ? "Passed" : "Failed");
+        Console.WriteLine(q.dequeue().getValue() == 30 ? "Passed" : "Failed");
+
+        // בדיקת dequeue על תור ריק
+        Console.WriteLine(q.dequeue() == null ? "Passed" : "Failed");
+
+        // בדיקת peek על תור ריק
+        Console.WriteLine(q.peek() == -1 ? "Passed" : "Failed");
+
+        // בדיקת שילוב enqueue ו-dequeue
+        q.enqueue(40);
+        Console.WriteLine(q.peek() == 40 ? "Passed" : "Failed");
+        q.enqueue(50);
+        Console.WriteLine(q.peek() == 40 ? "Passed" : "Failed");
+        Console.WriteLine(q.dequeue().getValue() == 40 ? "Passed" : "Failed");
+        Console.WriteLine(q.dequeue().getValue() == 50 ? "Passed" : "Failed");
+        Console.WriteLine(q.dequeue() == null ? "Passed" : "Failed");
+
+        Console.ReadLine();
+
+        Stack stack = new Stack();
+
+        // בדיקת הפונקציה push
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        Console.WriteLine(stack.peek() == 30 ? "Passed" : "Failed");
+
+        // בדיקת הפונקציה pop
+        Console.WriteLine(stack.pop() == 30 ? "Passed" : "Failed");
+        Console.WriteLine(stack.pop() == 20 ? "Passed" : "Failed");
+        Console.WriteLine(stack.pop() == 10 ? "Passed" : "Failed");
+
+        // בדיקת pop על מחסנית ריקה
+        Console.WriteLine(stack.pop() == -1 ? "Passed" : "Failed");
+
+        // בדיקת peek על מחסנית ריקה
+        Console.WriteLine(stack.peek() == -1 ? "Passed" : "Failed");
+
+        // בדיקת שילוב push ו-pop
+        stack.push(40);
+        Console.WriteLine(stack.peek() == 40 ? "Passed" : "Failed");
+        stack.push(50);
+        Console.WriteLine(stack.peek() == 50 ? "Passed" : "Failed");
+        Console.WriteLine(stack.pop() == 50 ? "Passed" : "Failed");
+        Console.WriteLine(stack.pop() == 40 ? "Passed" : "Failed");
+        Console.WriteLine(stack.pop() == -1 ? "Passed" : "Failed");
+        Console.ReadLine();
     }
 }
