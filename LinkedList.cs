@@ -113,6 +113,7 @@ namespace data_structures
                         prev.setNext(current.getNext());
                     }
                     current = current.getNext();
+                    break;
                 }
                 else
                 {
@@ -121,6 +122,7 @@ namespace data_structures
                     current = current.getNext();
                     
                 }
+           
             }
 
         }
@@ -146,11 +148,10 @@ namespace data_structures
                         prev.setNext(current.getNext());
                     }
                     current = current.getNext();
+                   
                 }
                 else
                 {
-
-
                     prev = current;
                     current = current.getNext();
                 }
