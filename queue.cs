@@ -47,7 +47,7 @@ namespace data_structures
 
         public int peek()
         {
-            if(Head !=  null) 
+            if(Head != null) 
            { return Head.Value; }
             return -1;
 

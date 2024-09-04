@@ -6,6 +6,23 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        BinaryTree tree = new BinaryTree();
+
+        tree.Insert(50);
+        tree.Insert(30);
+        tree.Insert(70);
+        tree.Insert(20);
+        tree.Insert(40);
+        tree.Insert(60);
+        tree.Insert(80);
+
+        Console.WriteLine("In-order traversal of the binary tree:");
+        tree.print();
+
+        Console.WriteLine("\nMinimum value in the binary tree: " + tree.findmin());
+        Console.WriteLine("Maximum value in the binary tree: " + tree.findmax());
+
         int totalTests = 0;
         int passedTests = 0;
 
@@ -328,9 +345,9 @@ class Program
         q.enqueue(10);
         q.enqueue(20);
         q.enqueue(30);
-        Console.WriteLine(q.Display() == "10 -> 20 -> 30" ? "Passed" : "Failed");
+        Console.WriteLine(q.Display() == "10 -> 20 -> 30" ? "Test 14 Passed" : "Failed");
         // בדיקת הפונקציה peek
-        Console.WriteLine(q.peek() == 10 ? "Passed" : "Failed");
+        Console.WriteLine(q.peek() == 10 ? "Test 15 Passed" : "Failed");
 
         // בדיקת הפונקציה dequeue
         Console.WriteLine(q.dequeue().getValue() == 10 ? "Passed" : "Failed");
@@ -387,6 +404,9 @@ class Program
         Console.WriteLine(stack.pop() == 50 ? "Passed" : "Failed");
         Console.WriteLine(stack.pop() == 40 ? "Passed" : "Failed");
         Console.WriteLine(stack.pop() == -1 ? "Passed" : "Failed");
-        Console.ReadLine();
+        //Console.ReadLine();
+
+
+      
     }
 }
